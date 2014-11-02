@@ -60,7 +60,8 @@ def final():
 	ent = Entry(result, textvariable=temp)
 	ent.pack()
 	ent.insert(0, output)
-	ent.select_range(0, END)
+	result.clipboard_clear()
+	result.clipboard_append(output)
 	return
 
 def main():
